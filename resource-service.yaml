@@ -44,3 +44,11 @@ aws:
     region: eu-north-1
 kafka:
   address: ${KAFKA_HOST:localhost}:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    show-details: always
