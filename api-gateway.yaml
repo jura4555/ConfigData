@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: api-gateway
+  main:
+    web-application-type: reactive
   cloud:
     gateway:
       server:
@@ -21,7 +23,6 @@ spring:
               uri: lb://song-service
               predicates:
                - Path=/songs/**
-
 eureka:
   client:
     serviceUrl:
