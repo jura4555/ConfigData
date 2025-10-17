@@ -24,3 +24,11 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    show-details: always
