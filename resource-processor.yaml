@@ -38,6 +38,14 @@ kafka:
   address: ${KAFKA_HOST:localhost}:9092 # broker
   group-id: resource-processor-group
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    show-details: always
+
 song-service-url: ${SONG_SERVICE_BASE_URL:http://song-service:8082}
 resource-service-url: ${RESOURCE_SERVICE_BASE_URL:http://resource-service:8081}
 
