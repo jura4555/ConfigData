@@ -24,6 +24,7 @@ spring:
 
 
 song-service-url: ${SONG_SERVICE_BASE_URL:http://song-service:8082}
+storage-service-url: ${STORAGE_SERVICE_BASE_URL:http://storage-service:8084}
 
 server:
   port: ${RESOURCE_SERVICE_INSIDE_PORT:8081}
