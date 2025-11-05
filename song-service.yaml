@@ -29,9 +29,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,refresh
+        include: health,info,prometheus,refresh
   health:
     show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 logging:
   logstash:
