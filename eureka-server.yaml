@@ -23,3 +23,8 @@ management:
   endpoint:
     health:
       show-details: always
+      
+logging:
+  logstash:
+    host: ${LOGSTASH_HOST:localhost}
+    port: ${LOGSTASH_PORT:5000}
