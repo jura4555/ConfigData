@@ -28,9 +28,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: health,info,prometheus
   health:
     show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 storage:
   paths:
@@ -41,5 +45,6 @@ logging:
   logstash:
     host: ${LOGSTASH_HOST:localhost}
     port: ${LOGSTASH_PORT:5000}
+
 
 
