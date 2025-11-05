@@ -37,4 +37,9 @@ storage:
     STAGING: staging/
     PERMANENT: permanent/
 
+logging:
+  logstash:
+    host: ${LOGSTASH_HOST:localhost}
+    port: ${LOGSTASH_PORT:5000}
+
 
