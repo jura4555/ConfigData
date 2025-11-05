@@ -49,3 +49,7 @@ management:
 song-service-url: ${SONG_SERVICE_BASE_URL:http://song-service:8082}
 resource-service-url: ${RESOURCE_SERVICE_BASE_URL:http://resource-service:8081}
 
+logging:
+  logstash:
+    host: ${LOGSTASH_HOST:localhost}
+    port: ${LOGSTASH_PORT:5000}
