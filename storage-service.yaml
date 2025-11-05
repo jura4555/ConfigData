@@ -25,11 +25,6 @@ eureka:
     fetchRegistry: true
     enabled: true
 management:
-  # endpoint:
-  #   metrics:
-  #     enabled: true
-  #   prometheus:
-  #     enabled: true
   endpoints:
     web:
       exposure:
@@ -50,6 +45,7 @@ logging:
   logstash:
     host: ${LOGSTASH_HOST:localhost}
     port: ${LOGSTASH_PORT:5000}
+
 
 
 
