@@ -33,7 +33,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus
+        include: *
   health:
     show-details: always
   metrics:
@@ -50,6 +50,7 @@ logging:
   logstash:
     host: ${LOGSTASH_HOST:localhost}
     port: ${LOGSTASH_PORT:5000}
+
 
 
 
