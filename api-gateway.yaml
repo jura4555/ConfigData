@@ -36,9 +36,9 @@ management:
         include: health,info,prometheus,refresh
   health:
     show-details: always
-  metrics:
-    export:
-      prometheus:
+  prometheus:
+    metrics:
+      export:
         enabled: true
 logging:
   logstash:
