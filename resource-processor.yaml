@@ -42,13 +42,9 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus,refresh
+        include: health,info,refresh
   health:
     show-details: always
-  metrics:
-    export:
-      prometheus:
-        enabled: true
 
 song-service-url: ${SONG_SERVICE_BASE_URL:http://song-service:8082}
 resource-service-url: ${RESOURCE_SERVICE_BASE_URL:http://resource-service:8081}
