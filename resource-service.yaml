@@ -25,8 +25,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: ${AUTHORIZATION_ISSUER_URL:http://localhost:8080/api/auth}
-          jwk-set-uri: ${AUTHORIZATION_JWK_SET_URI:http://localhost:8080/api/auth/oauth2/jwks}
+          issuer-uri: ${AUTHORIZATION_ISSUER_URL:http://localhost:8085/api/auth}
+          jwk-set-uri: ${AUTHORIZATION_JWK_SET_URI:http://localhost:8085/api/auth/oauth2/jwks}
 
 
 song-service-url: ${SONG_SERVICE_BASE_URL:http://song-service:8082}
